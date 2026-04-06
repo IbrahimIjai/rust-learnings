@@ -1,0 +1,13 @@
+[package]
+name = "algebra-basics-rs"
+version = "0.1.0"
+edition = "2024"
+description = "Basic algebra formulas: quadratic equation solver and 2x2 matrix operations."
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/ibrahimijai/algebra-basics-rs"
+documentation = "https://docs.rs/algebra-basics-rs"
+keywords = ["algebra", "math", "quadratic", "matrix"]
+categories = ["mathematics", "algorithms"]
+
+[dependencies]

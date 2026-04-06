@@ -1,0 +1,26 @@
+[package]
+name = "sqlxxsessionauth"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+tokio = { version = "1.42.0", features = ["full"] }
+
+sqlx = { version = "0.8.3", features = [ "sqlite", "runtime-tokio", "tls-native-tls" ] }
+serde = { version = "1.0.215", features = ["derive"] }
+
+axum = { version = "0.8.1" }
+axum_session = "0.16.0"
+axum_session_auth = { version = "0.16.0" }
+axum_session_sqlx = { version = "0.5.0", features = [ "sqlite", "tls-rustls"] }
+
+bcrypt = "0.16.0"
+anyhow = "1.0.102"
+async-trait = "0.1.89"
+
+# ..................................................................
+# sqlx = { version="0.8.3", features = [ "sqlite", "runtime-tokio", "tls-native-tls" ] }
+# tokio = { version = "1.42.0", features = ["full"]}
+# axum_session_sqlx = { version = "0.5.0", features = [ "sqlite", "tls-rustls"] }
+# axum_session = "0.16.0"
+# axum = { version = "0.8.1"}
